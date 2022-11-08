@@ -5,7 +5,7 @@ def str_to_int(string):
     You can pass "1.1" which returns 1
     ["1"] -> raises RuntimeError
     """
-    error_msg = "Unable to conver to integer:'%s'" % str(string)
+    error_msg = f"Unable to convert to integer:{string}"
 
     try:
         integer = float(string.replace(',', '.'))
